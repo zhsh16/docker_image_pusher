@@ -4,13 +4,85 @@ k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
 
-gcr.io/knative-samples/helloworld-go
-ghcr.io/kubeflow/kfp-inverse-proxy-agent:dummy
-gcr.io/cloudsql-docker/gce-proxy:1.25.0
-ghcr.io/kubeflow/kfp-viewer-crd-controller:dummy
-ghcr.io/kubeflow/kfp-frontend:dummy
-ghcr.io/kubeflow/kfp-scheduled-workflow-controller:dummy
-ghcr.io/kubeflow/kfp-visualization-server:dummy
-kserve/models-web-app:latest
-postgres:14.7-alpine3.17
-ghcr.io/kubeflow/kubeflow/poddefaults-webhook
+# 训练控制器
+ghcr.io/kubeflow/training-v1/training-operator
+# MPI运行时
+mpioperator/mpi-pi:openmpi
+# 训练运行时
+pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
+# Trainer控制器
+ghcr.io/kubeflow/trainer/trainer-controller-manager
+# Torchtune训练-数据集初始化
+ghcr.io/kubeflow/trainer/dataset-initializer
+# Torchtune训练-模型初始化
+ghcr.io/kubeflow/trainer/model-initializer
+# Torchtune训练器
+ghcr.io/kubeflow/trainer/torchtune-trainer
+# MLX运行时
+ghcr.io/kubeflow/trainer/mlx-runtime
+# DeepSpeed运行时
+ghcr.io/kubeflow/trainer/deepspeed-runtime
+# Notebook-Jupyter基础镜像
+ghcr.io/kubeflow/kubeflow/notebook-servers/jupyter:latest
+# Notebook-Jupyter SciPy镜像
+ghcr.io/kubeflow/kubeflow/notebook-servers/jupyter-scipy:v1.10.0
+# Notebook-Jupyter SciPy旧版镜像
+kubeflownotebookswg/jupyter-scipy:v1.6.1
+# Katib-文件指标收集器
+ghcr.io/kubeflow/katib/file-metrics-collector:v0.18.0
+# Katib-TensorFlow事件指标收集器
+ghcr.io/kubeflow/katib/tfevent-metrics-collector:v0.18.0
+# Katib-Hyperopt优化算法
+ghcr.io/kubeflow/katib/suggestion-hyperopt:v0.18.0
+# Katib-Optuna优化算法
+ghcr.io/kubeflow/katib/suggestion-optuna:v0.18.0
+# Katib-Hyperband优化算法
+ghcr.io/kubeflow/katib/suggestion-hyperband:v0.18.0
+# Katib-SKopt优化算法
+ghcr.io/kubeflow/katib/suggestion-skopt:v0.18.0
+# Katib-Goptuna优化算法
+ghcr.io/kubeflow/katib/suggestion-goptuna:v0.18.0
+# Katib-ENAS优化算法
+ghcr.io/kubeflow/katib/suggestion-enas:v0.18.0
+# Katib-DARTS优化算法
+ghcr.io/kubeflow/katib/suggestion-darts:v0.18.0
+# Katib-PBT优化算法
+ghcr.io/kubeflow/katib/suggestion-pbt:v0.18.0
+# Katib-MedianStop早停策略
+ghcr.io/kubeflow/katib/earlystopping-medianstop:v0.18.0
+# Katib-PyTorch MNIST CPU示例
+ghcr.io/kubeflow/katib/pytorch-mnist-cpu:v0.18.0
+# Katib-ENAS CNN CIFAR10 CPU示例
+ghcr.io/kubeflow/katib/enas-cnn-cifar10-cpu:v0.18.0
+# 模型注册表控制器
+ghcr.io/kubeflow/model-registry/controller:latest
+# 元数据存储服务
+gcr.io/tfx-oss-public/ml_metadata_store_server:1.14.0
+# MySQL数据库
+mysql:8.3
+# Nginx UI组件
+nginx:1.25-alpine
+# Ray运行时
+rayproject/ray:2.44.1-py311-cpu
+# KubeRay操作器
+quay.io/kuberay/operator:v1.32
+# SeaweedFS存储
+chrislusf/seaweedfs:3.85
+chrislusf/seaweedfs:3.92
+# KinD测试节点
+kindest/node:v1.33.1@sha256:050072256b9a903bd914c0b2866828150cb229cea0efe5892e2b644d5dd3b34f
+kindest/node:v1.32.0@sha256:c48c62eac5da28cdadcf560d1d8616cfa6783b58f0d94cf63ad1bf49600cb027
+# Alpine Kubernetes工具
+docker.io/alpine/k8s:1.32.3
+# Nginx Alpine
+nginx:alpine
+# Busybox工具
+busybox
+# Volumes Web应用
+ghcr.io/kubeflow/kubeflow/volumes-web-app
+# KFP可视化服务器
+ghcr.io/kubeflow/kfp-visualization-server
+# KFP前端
+ghcr.io/kubeflow/kfp-frontend
+# PyTorch MNIST示例
+docker.io/kubeflowkatib/pytorch-mnist:v1beta1-45c5727
