@@ -3,3 +3,14 @@ ghcr.io/dexidp/dex:v2.43.1
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
+
+gcr.io/knative-samples/helloworld-go
+ghcr.io/kubeflow/kfp-inverse-proxy-agent:dummy
+gcr.io/cloudsql-docker/gce-proxy:1.25.0
+ghcr.io/kubeflow/kfp-viewer-crd-controller:dummy
+ghcr.io/kubeflow/kfp-frontend:dummy
+ghcr.io/kubeflow/kfp-scheduled-workflow-controller:dummy
+ghcr.io/kubeflow/kfp-visualization-server:dummy
+kserve/models-web-app:latest
+postgres:14.7-alpine3.17
+ghcr.io/kubeflow/kubeflow/poddefaults-webhook
