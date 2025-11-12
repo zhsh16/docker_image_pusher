@@ -55,7 +55,7 @@ ghcr.io/kubeflow/katib/pytorch-mnist-cpu:v0.18.0
 # Katib-ENAS CNN CIFAR10 CPU示例
 ghcr.io/kubeflow/katib/enas-cnn-cifar10-cpu:v0.18.0
 # 模型注册表控制器
-ghcr.io/kubeflow/model-registry:latest
+# ghcr.io/kubeflow/model-registry:latest
 # 元数据存储服务
 gcr.io/tfx-oss-public/ml_metadata_store_server:1.14.0
 # MySQL数据库
