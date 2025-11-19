@@ -2,3 +2,11 @@
 #--platform=linux/arm64 xiaoyaliu/alist
 
 docker.io/rancher/mirrored-pause:3.6
+
+rancher/mirrored-pause:3.6
+
+quay.io/jetstack/cert-manager-cainjector:v1.16.1
+
+docker.io/calico/cni:v3.25.0
+docker.io/calico/node:v3.25.0
+docker.io/calico/kube-controllers:v3.25.0
