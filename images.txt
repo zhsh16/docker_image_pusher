@@ -1,7 +1,4 @@
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
 
-rancher/mirrored-coredns-coredns:1.13.1
-rancher/local-path-provisioner:v0.0.32
-rancher/klipper-helm:v0.9.10-build20251111
-rancher/mirrored-metrics-server:v0.8.0
+rancher/klipper-helm:v0.9.8-build20250709
